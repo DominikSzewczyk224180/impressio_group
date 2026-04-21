@@ -25,7 +25,7 @@ body {
   font-feature-settings: "ss01", "cv11";
 }
 
-.display { font-family: 'Fraunces', Georgia, serif; font-weight: 500; letter-spacing: -0.02em; line-height: 0.95; }
+.display { font-family: 'Playfair Display', Georgia, serif; font-weight: 500; letter-spacing: -0.02em; line-height: 0.95; }
 .mono { font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; letter-spacing: 0.05em; text-transform: uppercase; }
 
 /* ========== NAV ========== */
@@ -42,7 +42,7 @@ nav {
 nav.scrolled { padding: 14px 40px; }
 
 .logo {
-  font-family: 'Fraunces', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
   font-weight: 500;
   font-style: italic;
@@ -312,7 +312,7 @@ nav.scrolled { padding: 14px 40px; }
 .showcase-title {
   position: absolute;
   left: 0; bottom: 0;
-  font-family: 'Fraunces', serif;
+  font-family: 'Playfair Display', serif;
   font-size: clamp(1.3rem, 2vw, 1.8rem);
   font-weight: 500;
   font-style: italic;
@@ -404,7 +404,7 @@ nav.scrolled { padding: 14px 40px; }
   width: max-content;
 }
 .marquee-item {
-  font-family: 'Fraunces', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 1.4rem;
   font-style: italic;
   display: flex; align-items: center; gap: 60px;
@@ -421,8 +421,8 @@ section { padding: 120px 40px; position: relative; }
 
 .section-header {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 60px;
+  grid-template-columns: 180px 1fr;
+  gap: 48px;
   margin-bottom: 80px;
   align-items: end;
   max-width: 1400px;
@@ -471,7 +471,7 @@ section { padding: 120px 40px; position: relative; }
 .tech-card:hover::before { width: 100%; }
 
 .tech-number {
-  font-family: 'Fraunces', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 4rem;
   font-weight: 300;
   color: var(--orange);
@@ -479,7 +479,7 @@ section { padding: 120px 40px; position: relative; }
   margin-bottom: 32px;
 }
 .tech-card h3 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 2.2rem;
   font-weight: 500;
   margin-bottom: 16px;
@@ -580,7 +580,7 @@ section { padding: 120px 40px; position: relative; }
   -webkit-backdrop-filter: blur(8px);
 }
 .portfolio-item-title {
-  font-family: 'Fraunces', serif;
+  font-family: 'Playfair Display', serif;
   font-size: clamp(1.4rem, 2.5vw, 2.2rem);
   font-weight: 500;
   line-height: 1.1;
@@ -625,7 +625,7 @@ section { padding: 120px 40px; position: relative; }
 }
 .client-cell:hover { background: var(--ink-soft); }
 .client-icon {
-  font-family: 'Fraunces', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 2.6rem;
   color: var(--orange);
   margin-bottom: 16px;
@@ -633,7 +633,7 @@ section { padding: 120px 40px; position: relative; }
   font-style: italic;
 }
 .client-cell h4 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 8px;
@@ -655,7 +655,7 @@ section { padding: 120px 40px; position: relative; }
   align-items: start;
 }
 .about-text h3 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Playfair Display', serif;
   font-size: clamp(2rem, 4vw, 3.4rem);
   font-weight: 500;
   margin-bottom: 32px;
@@ -683,7 +683,7 @@ section { padding: 120px 40px; position: relative; }
   background: var(--paper);
 }
 .stat-number {
-  font-family: 'Fraunces', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 3.2rem;
   font-weight: 400;
   color: var(--ink);
@@ -711,7 +711,7 @@ section { padding: 120px 40px; position: relative; }
 }
 
 .contact-info h3 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Playfair Display', serif;
   font-size: clamp(2.8rem, 6vw, 5rem);
   font-weight: 500;
   line-height: 1;
