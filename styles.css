@@ -202,7 +202,7 @@ nav.scrolled { padding: 14px 40px; }
   background-repeat: no-repeat;
   opacity: 0;
   transform: scale(1.08);
-  animation: slide-cycle 24s infinite cubic-bezier(0.22, 1, 0.36, 1);
+  animation: slide-cycle 28s infinite cubic-bezier(0.22, 1, 0.36, 1);
   will-change: opacity, transform;
 }
 
@@ -212,12 +212,13 @@ nav.scrolled { padding: 14px 40px; }
 .slide-4 { animation-delay: 12s; }
 .slide-5 { animation-delay: 16s; }
 .slide-6 { animation-delay: 20s; }
+.slide-7 { animation-delay: 24s; }
 
 @keyframes slide-cycle {
   0%   { opacity: 0; transform: scale(1.08); }
   4%   { opacity: 1; transform: scale(1.06); }
-  16%  { opacity: 1; transform: scale(1.01); }
-  20%  { opacity: 0; transform: scale(1); }
+  14%  { opacity: 1; transform: scale(1.01); }
+  18%  { opacity: 0; transform: scale(1); }
   100% { opacity: 0; transform: scale(1.08); }
 }
 
@@ -282,7 +283,7 @@ nav.scrolled { padding: 14px 40px; }
   position: absolute;
   top: 0; right: 0;
   opacity: 0;
-  animation: counter-cycle 24s infinite;
+  animation: counter-cycle 28s infinite;
 }
 .counter-num.n-1 { animation-delay: 0s; }
 .counter-num.n-2 { animation-delay: 4s; }
@@ -290,11 +291,12 @@ nav.scrolled { padding: 14px 40px; }
 .counter-num.n-4 { animation-delay: 12s; }
 .counter-num.n-5 { animation-delay: 16s; }
 .counter-num.n-6 { animation-delay: 20s; }
+.counter-num.n-7 { animation-delay: 24s; }
 
 @keyframes counter-cycle {
   0%, 2%    { opacity: 0; transform: translateY(6px); }
-  5%, 16%   { opacity: 1; transform: translateY(0); }
-  19%, 100% { opacity: 0; transform: translateY(-6px); }
+  4%, 14%   { opacity: 1; transform: translateY(0); }
+  17%, 100% { opacity: 0; transform: translateY(-6px); }
 }
 
 /* Dolna belka z tytułem projektu */
@@ -318,7 +320,7 @@ nav.scrolled { padding: 14px 40px; }
   font-style: italic;
   letter-spacing: -0.01em;
   opacity: 0;
-  animation: title-cycle 24s infinite;
+  animation: title-cycle 28s infinite;
   white-space: nowrap;
 }
 .showcase-title.t-1 { animation-delay: 0s; }
@@ -327,11 +329,12 @@ nav.scrolled { padding: 14px 40px; }
 .showcase-title.t-4 { animation-delay: 12s; }
 .showcase-title.t-5 { animation-delay: 16s; }
 .showcase-title.t-6 { animation-delay: 20s; }
+.showcase-title.t-7 { animation-delay: 24s; }
 
 @keyframes title-cycle {
   0%, 2%    { opacity: 0; transform: translateY(8px); }
-  5%, 16%   { opacity: 1; transform: translateY(0); }
-  19%, 100% { opacity: 0; transform: translateY(-8px); }
+  4%, 14%   { opacity: 1; transform: translateY(0); }
+  17%, 100% { opacity: 0; transform: translateY(-8px); }
 }
 
 /* Paski postępu — mini pasek dla każdego slajdu */
@@ -358,7 +361,7 @@ nav.scrolled { padding: 14px 40px; }
   height: 100%;
   background: var(--orange);
   transform: translateX(-100%);
-  animation: progress-fill 24s infinite linear;
+  animation: progress-fill 28s infinite linear;
 }
 .progress-bar.p-1::after { animation-delay: 0s; }
 .progress-bar.p-2::after { animation-delay: 4s; }
@@ -366,11 +369,12 @@ nav.scrolled { padding: 14px 40px; }
 .progress-bar.p-4::after { animation-delay: 12s; }
 .progress-bar.p-5::after { animation-delay: 16s; }
 .progress-bar.p-6::after { animation-delay: 20s; }
+.progress-bar.p-7::after { animation-delay: 24s; }
 
 @keyframes progress-fill {
   0%   { transform: translateX(-100%); }
-  16.66% { transform: translateX(0); }
-  16.67%, 100% { transform: translateX(100%); }
+  14.28% { transform: translateX(0); }
+  14.30%, 100% { transform: translateX(100%); }
 }
 
 /* Respektuj preferencje reduce-motion */
