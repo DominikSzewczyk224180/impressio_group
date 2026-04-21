@@ -533,7 +533,7 @@ section { padding: 120px 40px; position: relative; }
   margin: 0 auto;
 }
 .portfolio-item {
-  background-color: var(--ink);
+  background-color: #3a3a36;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -556,15 +556,21 @@ section { padding: 120px 40px; position: relative; }
 .portfolio-overlay {
   position: absolute;
   inset: 0;
-  padding: 28px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(to top, rgba(14, 14, 12, 0.9) 0%, rgba(14, 14, 12, 0.1) 40%, rgba(14, 14, 12, 0) 70%);
-  transition: background 0.3s;
+  background: linear-gradient(to top,
+    rgba(14, 14, 12, 0.85) 0%,
+    rgba(14, 14, 12, 0.4) 18%,
+    rgba(14, 14, 12, 0) 35%);
+  transition: background 0.35s ease, opacity 0.35s ease;
 }
 .portfolio-item:hover .portfolio-overlay {
-  background: linear-gradient(to top, rgba(14, 14, 12, 0.95) 0%, rgba(14, 14, 12, 0.5) 50%, rgba(14, 14, 12, 0.15) 100%);
+  background: linear-gradient(to top,
+    rgba(14, 14, 12, 0.95) 0%,
+    rgba(14, 14, 12, 0.55) 25%,
+    rgba(14, 14, 12, 0.1) 55%);
 }
 
 .portfolio-item-tag {
@@ -574,10 +580,11 @@ section { padding: 120px 40px; position: relative; }
   text-transform: uppercase;
   color: var(--orange);
   align-self: flex-start;
-  background: rgba(14, 14, 12, 0.6);
-  padding: 6px 10px;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(14, 14, 12, 0.75);
+  padding: 7px 11px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(242, 160, 7, 0.25);
 }
 .portfolio-item-title {
   font-family: 'Playfair Display', serif;
@@ -586,18 +593,19 @@ section { padding: 120px 40px; position: relative; }
   line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--paper);
-  text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.85);
   margin-top: auto;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 .portfolio-item-meta {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--paper);
-  opacity: 0.85;
+  opacity: 0.9;
   font-weight: 500;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
 }
 
 /* DLA KOGO */
