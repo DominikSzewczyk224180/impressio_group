@@ -555,12 +555,74 @@ section { padding: 120px 40px; position: relative; }
 }
 .portfolio-item:hover .portfolio-img { transform: scale(1.04); }
 
-.portfolio-item:nth-child(1) { grid-column: span 5; }
-.portfolio-item:nth-child(2) { grid-column: span 4; }
-.portfolio-item:nth-child(3) { grid-column: span 3; }
-.portfolio-item:nth-child(4) { grid-column: span 3; }
-.portfolio-item:nth-child(5) { grid-column: span 5; }
-.portfolio-item:nth-child(6) { grid-column: span 4; }
+.portfolio-item:nth-child(1) { grid-column: span 6; }
+.portfolio-item:nth-child(2) { grid-column: span 6; }
+.portfolio-item:nth-child(3) { grid-column: span 4; }
+.portfolio-item:nth-child(4) { grid-column: span 4; }
+.portfolio-item:nth-child(5) { grid-column: span 4; }
+.portfolio-item:nth-child(6) { grid-column: span 6; }
+.portfolio-item:nth-child(7) { grid-column: span 6; }
+
+/* Featured realizacja — wyróżniony element */
+.portfolio-featured {
+  position: relative;
+}
+.portfolio-featured::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid var(--orange);
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.portfolio-featured:hover::after { opacity: 1; }
+
+.portfolio-tags-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.portfolio-tag-featured {
+  background: var(--orange) !important;
+  color: var(--ink) !important;
+  border: 1px solid var(--orange) !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+}
+.tag-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ink);
+  animation: tag-pulse 1.8s ease-in-out infinite;
+}
+@keyframes tag-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.75); }
+}
+
+.portfolio-featured-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.portfolio-featured-desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--paper);
+  opacity: 0.85;
+  max-width: 460px;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  margin: -4px 0 4px;
+}
 
 .portfolio-overlay {
   position: absolute;
